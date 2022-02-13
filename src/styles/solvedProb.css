@@ -1,0 +1,152 @@
+.spacing {
+    margin-top: 175px;
+    margin-bottom: 100px;
+}
+.pen {
+    text-align: center;
+}
+
+.start-text {
+    text-align: center;
+    font-family: "AvenirBlack";
+    color: #e30513;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+    margin-top: 30px;
+}
+
+.box {
+    padding: 0 5px 0 5px;
+}
+
+.inner-box {
+    background-color: #909090;
+    height: 300px;
+}
+
+.inner-box p {
+    font-family: "AvenirBook";
+    font-size: 26px;
+    text-align: left;
+    line-height: 36px;
+    letter-spacing: 0.03px;
+    color: white;
+}
+
+.inner-box a {
+    font-family: "AvenirBook";
+    font-size: 16px;
+    letter-spacing: 0.02px;
+    color: white;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 260px;
+    max-width: 350px;
+    padding-left: 30px;
+    word-wrap: break-word;
+
+}
+
+.view-work {
+    text-align: center;
+    color: #3b2143;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+.view-work a {
+    color: #3b2143;
+}
+
+.return-top {
+    text-align: end;
+    color: #3b2143;
+    font-size: 16px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.up-arrow {
+    padding: 0px 5px 3px 0px;
+}
+
+a img {
+    padding: 0 10px 5px 0;
+}
+
+
+
+
+
+/* CSS styles to be applied if screen size lies between 0px and 400px */
+@media only screen and (max-width: 400px) {
+    .box {
+        padding: 0 10px 10px 10px;
+    }
+
+    .inner-box {
+        height: 200px;
+    }
+
+    .text-box {
+        height: 180px;
+        max-width: 275px;
+    }
+
+    .inner-box p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .view-work , .return-top{
+        margin-top: 50px;
+    }
+}
+
+/* CSS styles to be applied if screen size is between 401px and 500px */
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+    .box {
+        padding: 0 20px 10px 20px;
+    }
+
+    .inner-box {
+        height: 200px;
+    }
+
+    .text-box {
+        height: 175px;
+        max-width: 300px;
+    }
+
+    .inner-box p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .view-work , .return-top{
+        margin-top: 50px;
+    }
+}
+
+/* CSS styles to be applied when screen size is between 501px and 1200px */
+@media only screen and (min-width: 501px) and (max-width: 1200px) {
+
+    .box {
+        padding: 0px 20px 10px 20px;
+    }
+
+    .inner-box {
+        height: 250px;
+    }
+
+    .text-box {
+        height: 200px;
+        max-width: 370px;
+    }
+}

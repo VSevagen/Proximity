@@ -1,0 +1,156 @@
+/* Animation to moving arrow up and down */
+@keyframes upAndDown {
+    from {top: 80%;}
+    to {top: 85%}
+}
+
+.cont {
+    position: relative;
+    text-align: center;
+}
+
+.video-poster {
+    width: 100%;
+    z-index: 0;
+}
+
+.tagline {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0.02px;
+    font-family: "AvenirBlack";
+    width: 620px;
+    height: 112px;
+}
+
+.arrow {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation-name: upAndDown;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+
+.header-bar {
+    position: absolute;
+    width: 92%;
+    box-sizing: border-box;
+
+}
+
+.lang {
+    position: absolute;
+    border: 1px solid white;
+    border-right: none;
+    color: white;
+    margin-top: 35px;
+    padding: 7px 0;
+    right: 0;
+    width: 96px;
+    height: 39px;
+}
+
+.logo {
+    float: left;
+}
+
+li a {
+    font-family: "AvenirBook";
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/* CSS styles to be applied if screen size lies between 0px and 400px */
+@media only screen and (max-width: 400px) {
+
+    .logo {
+        width: 40%;
+        height: 100%;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .navbar>.container {
+        flex-wrap: nowrap;
+    }
+
+    .video-poster {
+        height: 120%;
+    }
+
+    .lang {
+        width: 60px;
+        height: 40px;
+        bottom: 0;
+        font-size: 15px;
+    }
+
+    .tagline {
+        font-size: 1.3rem;
+        width: 70%;
+        line-height: normal;
+        padding-top: 50px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+/* CSS styles to be applied if screen size is between 401px and 500px */
+@media only screen and (min-width: 401px) and (max-width:500px) {
+    .logo {
+        width: 50%;
+    }
+
+    .lang {
+        bottom: 0;
+        font-size: 15px;
+    }
+
+    .tagline {
+        font-size: 1.7rem;
+        width: 70%;
+        line-height: normal;
+        padding-top: 50px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+/* CSS styles to be applied when screen size is between 501px and 800px */
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+
+    .tagline {
+        font-size: 2.5rem;
+        width: 70%;
+        line-height: normal;
+        padding-top: 50px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .lang {
+        bottom: 0;
+    }
+}

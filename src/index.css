@@ -7,6 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "AvenirBlack";
+  src: url(./fonts/Avenir-Black.ttf);
+}
+
+@font-face {
+  font-family: "AvenirBook";
+  src: url(./fonts/Avenir-Book.ttf);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

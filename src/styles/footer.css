@@ -1,0 +1,87 @@
+.footer {
+    background-image: linear-gradient(to right, #e83780 0%, #f18926 99%, #f18a25 100%);
+    min-height: 130px;
+}
+
+.inner-b {
+    text-align: end;
+    top: 50%;
+    margin-top: 50px;
+}
+
+.social {
+    padding: 0 7px 0 7px;
+}
+
+.privacy {
+    color: white;
+}
+
+.copyright {
+    line-height: 130px;
+    color: white;
+    font-family: "AvenirBook";
+}
+
+
+
+
+/* CSS styles to be applied if screen size lies between 0px and 400px */
+@media only screen and (max-width: 400px){
+
+    .copyright {
+        font-size: 15px;
+        padding: 30px 10px 20px 10px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .inner-b {
+        text-align: center;
+        top: 40%;
+        margin-top: 10px;
+    }
+
+    .social {
+        padding: 0 7px 20px 7px;
+    }
+}
+
+/* CSS styles to be applied if screen size is between 401px and 500px */
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+    .copyright {
+        padding: 20px 5px 10px 5px;
+        line-height: normal;
+        text-align:center;
+    }
+
+    .inner-b {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* CSS styles to be applied when screen size is between 501px and 1200px */
+@media only screen and (min-width: 501px) and (max-width: 1200px) {
+    .copyright {
+        text-align: center;
+        line-height: normal;
+        padding: 20px 10px 10px 10px;
+    }
+
+    .inner-b {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+/* CSS styles to be applied when screen size is between 1201px and 1400px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .copyright {
+        line-height: normal;
+        padding: 20px 10px 10px 10px;
+        margin: 40px 0 10px 0;
+    }
+}
